@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+    font-family: 'Figtree';
+    src:  url(assets/fonts/Figtree-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: 'Figtree-Bold';
+      src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+    }
+    @font-face {
+      font-family: "Figtree-s";
+      src: url(assets/fonts/static/Figtree-Medium.ttf);
+    }
+    body {
+      margin:0;
+      padding:0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(250, 218, 85);
+    }
+    #blog {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      min-width: 20vw;
+      margin: 0 auto;
+      vertical-align: middle;
+      overflow: auto;
+      border-radius: 1.9vh;
+      border-color: black;
+      border-left-width: 0.3vh;
+      border-top-width: 0.3vh;
+      border-style: solid;
+      border-right-width: 0.3vh;
+      border-bottom-width: 0.3vh;
+      height: 69vh;
+      z-index: 1;
+      background-color: white;
+      margin-top: 15.5vh;
+    }
+    .illustration{
+      width: 90%;
+      margin: auto;
+      margin-top: 5%;
+      border-radius: 1.9vh;
+      margin-bottom: 5%;
+    }
+    #background{
+      border: 2px solid black;
+      z-index:-1;
+      border-radius: 1.9vh;
+      position:absolute;
+      width: 25vw;
+      height:inherit;
+      top:16.8vh;
+      left: 38%;
+      border-width:0.3vh;
+      border-left:0px;
+      border-top:0px;
+      background-color: black;
+    }
+    #entire-body{
+      height: fit-content;
+      min-height:32.5vh;
+    }
+    .talk{
+      margin: 5%;
+      margin-top:0;
+    }
+    .focus{
+      padding: 3% 5%;
+      background-color: rgb(250, 218, 85);
+      width: fit-content;
+      border-radius: 5px;
+      margin-top: 0;
+      font-family: "Figtree-Bold";
+      font-size: 1.9vh;
+    }
+    .paragraph{
+      font-family:"Figtree-s";
+      color: rgba(125, 125, 125, 90%);
+      font-size: 2vh;
+    }
+    .date{
+      font-family: "Figtree-s";
+      font-size: 2vh;
+    }
+    #author{
+      display:flex;
+      flex-direction: row;
+      width:40% ;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      height: min-content;
+      align-items: center;
+    }
+    .icon{
+      width:2vw;
+      height: 4vh;
+      margin: 0;
+    }
+    .author{
+      padding: 0;
+      margin:0;
+      font-family: "Figtree-Bold";
+      font-size: 2vh;
+    }
+    .header{
+      font-family: "Figtree-Bold";
+      font-size: 3.2vh;
+    }
+    .header:hover{
+      font-family: "Figtree-Bold";
+      color: rgb(250, 218, 85);
+      font-size: 3.2vh;
+    }
+    footer { 
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(195, 115, 235, 70%);
+      width: 100vw;
+    }
+    .attribution{
+      font-size: 11px; 
+      text-align: center;
+      display: flex;
+      flex-direction: row;  
+      justify-content: space-between;
+      width: 50%;
+      margin: auto;
+      font-weight: bold;
+      font-family: "Figtree-Bold";
+      font-size: 2vh;
+    }
+    .attribution a { color: rgb(260, 238, 85); text-decoration: none; }
+  </style>
+</head>
+<body>
+<div id="entire-body">
+
+<div id="blog">
+  <div id="background"></div>
+  <img src = "assets/images/illustration-article.svg" alt ="illustration-article" class="illustration">
+  <div class="talk">
+  <p class="focus">Learning</p>
+  
+  <p class="date">Published 21 Dec 2023</p>
+
+  <h2 class="header">HTML & CSS foundations</h2>
+
+  <p class="paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+  <div id="author">
+  <img src="assets/images/image-avatar.webp" alt="author-icon" class="icon">
+  <p class="author">Greg Hooper</p>
+  </div>
+  </div>
+</div>
+</div>  
+<footer>
+  <div class="attribution">
+    <div>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </div>
+    <div>Coded by <a href="#">DUSO-Aishe</a>.</div>
+  </div>
+</footer>
+</body>
+</html>
